@@ -1,4 +1,4 @@
-<h1>API REST de foro para realizar comnetarios</h1>
+<h1>API REST de foro para realizar comentarios</h1>
 <h4>Con este API REST puedes:</h4>
 
 <p>1. Generar el token para el login del usuario</p>
