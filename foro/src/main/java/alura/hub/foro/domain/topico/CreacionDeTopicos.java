@@ -22,8 +22,8 @@ public class CreacionDeTopicos {
         var curso = cursoRepository.findById(datosCreacionComentario.idCurso()).get();
         var topico = new Topico(null, datosCreacionComentario.titulo(), datosCreacionComentario.mensaje(), datosCreacionComentario.fechaCreacion(),
                 usuario.getNombre(),curso);
-        var topicoRespuesta = new Topico(topico.getId(),topico.getTitulo(),topico.getMensaje(),topico.getFechaCreacion(),topico.getAutor());
         topicoRepository.save(topico);
+        var topicoRespuesta = new Topico(topico.getId(),topico.getTitulo(),topico.getMensaje(),topico.getFechaCreacion(),topico.getAutor());
         return new DatosDetalleTopico(topicoRespuesta);
     }
 
